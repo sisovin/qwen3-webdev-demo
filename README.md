@@ -1,8 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Qwen3 WebDev Demo
+
+![Qwen3 WebDev Demo](https://img.shields.io/badge/Qwen3-WebDev_Demo-blue)
+![Next.js 15](https://img.shields.io/badge/Next.js-15-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8)
+![shadcn/ui](https://img.shields.io/badge/shadcn/ui-Latest-black)
+
+A showcase project demonstrating the web development capabilities of Qwen3. This project is built with Next.js 15, TypeScript, Tailwind CSS v4, and shadcn/ui components.
+
+## Features
+
+- 🚀 Modern responsive web design
+- 🌙 Dark/Light theme switching
+- 🧩 Modular component architecture
+- 📱 Mobile-friendly navigation
+- 🎨 Beautiful UI with shadcn/ui components
+- 🔄 Interactive UI elements
+- 🎭 Animated transitions
+
+## Tech Stack
+
+- **Frontend Framework**: [Next.js 15](https://nextjs.org) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/) (Strict Mode)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **Icons**: [Lucide React](https://lucide.dev/icons/)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20.x or later
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/sisovin/qwen3-webdev-demo.git
+cd qwen3-webdev-demo
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+# or
+bun install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -14,23 +66,71 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+qwen3-webdev-demo/
+├── app/
+│   ├── (main)/            # Main layout route group
+│   │   ├── components/    # Page-specific components
+│   │   │   ├── layout/    # Layout components (navbar, footer)
+│   │   │   └── pages/     # Page sections (hero, about, etc.)
+│   │   ├── layout.tsx     # Main layout
+│   │   └── page.tsx       # Main page
+│   ├── globals.css        # Global styles
+│   └── layout.tsx         # Root layout
+├── components/
+│   └── ui/                # Reusable UI components from shadcn/ui
+├── hooks/                 # Custom React hooks
+├── lib/                   # Utility functions and shared code
+├── public/                # Static assets
+├── tailwind.config.ts     # Tailwind CSS configuration
+└── next.config.ts         # Next.js configuration
+```
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Theming
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project uses the `next-themes` package for theme management. You can customize the themes in the `tailwind.config.ts` file.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Components
 
-## Deploy on Vercel
+Most of the UI components are from shadcn/ui, which can be customized in the `components/ui` directory.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Styling
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tailwind CSS is used for styling. You can modify the configuration in `tailwind.config.ts` file.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org) for the React framework
+- [Tailwind CSS](https://tailwindcss.com) for the utility-first CSS framework
+- [shadcn/ui](https://ui.shadcn.com) for the beautiful UI components
+- [Vercel](https://vercel.com) for the deployment platform
+- [Lucide Icons](https://lucide.dev) for the icon set
+- [next-themes](https://github.com/pacocoursey/next-themes) for theme management
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+[Sisovin Chieng](https://github.com/sisovin) - Full Stack Developer
+
+---
+
+Built with ❤️ using Qwen3, an AI assistant by Alibaba Cloud.

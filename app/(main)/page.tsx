@@ -1,12 +1,13 @@
 
-import { Hero } from './(main)/components/pages/hero'
-import { AboutSection } from './(main)/components/pages/about-section'
-import { FeaturesSection } from './(main)/components/pages/features-section'
-import { DemoSection } from './(main)/components/pages/demo-section'
-import { PerformanceSection } from './(main)/components/pages/performance-section'
-import { Navbar } from './(main)/components/layout/navbar'
-import { Footer } from './(main)/components/layout/footer'
-import { CallToAction } from './(main)/components/pages/call-to-action'
+import { Navbar } from './components/layout/navbar'
+import { Footer } from './components/layout/footer'
+import { Hero } from './components/pages/hero'
+import { AboutSection } from './components/pages/about-section'
+import { FeaturesSection } from './components/pages/features-section'
+import { DemoSection } from './components/pages/demo-section'
+import { PerformanceSection } from './components/pages/performance-section'
+import { CallToAction } from './components/pages/call-to-action'
+import React from 'react'
 
 export default function Home() {
   return (
